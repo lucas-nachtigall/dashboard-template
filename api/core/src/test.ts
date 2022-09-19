@@ -2,7 +2,7 @@ import { API, RegisterOptions } from "lambda-api";
 
 module.exports = (api: API, opts: RegisterOptions) => {
 
-    api.get("/status", async (req, res) => {
+    api.get("/", async (req, res) => {
         try {
             console.log('/api/status - log');
             console.error('/api/status - error');
