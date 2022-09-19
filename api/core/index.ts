@@ -3,6 +3,7 @@ import createAPI from 'lambda-api';
 
 const api = createAPI();
 
+api.register(require("./src/test"), { prefix: "/test" });
 api.register(require("./src/login"), { prefix: "/login" });
 api.register(require("./src/logout"), { prefix: "/logout" });
 
